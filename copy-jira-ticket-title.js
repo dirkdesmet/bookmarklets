@@ -9,7 +9,7 @@
         }
     }).toArray();
     /* copy issue from open issue */
-    var t = document.title.replace(" - JIRA@XploreGroup", "");
+    var t = document.title.replace(/ - .*$/g, "");
     var match = t.match(/\[(.*)\]/);
     if (match) {
         var k = match[1];
