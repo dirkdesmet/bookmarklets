@@ -8,6 +8,6 @@
             summary: s
         }
     }).toArray(); /* copy issue from open issue */
-    var t = document.title.replace(/(^\[|\]|\(|\)|\:|"|'| - [^ - ]+.$)/g, "").replace(/ |\//g, "-");
+    var t = document.title.replace(/(^\[|\]|\(|\)|\:|;|,|"|'|´|`| - [^ - ]+.$)/g, "").replace(/ |\//g, "-");
     window.prompt("Copy to clipboard: Ctrl+C, Enter", t)
 })()
