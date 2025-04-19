@@ -16,3 +16,10 @@ javascript:(function(){var js=document.body.appendChild(document.createElement("
 ```
 
 ![Preview of bookmarklet in action](screenshot.png)
+
+# Pass current URL to archive.is
+Handy servivce to see archives from certain URLs
+```javascript
+javascript:(function(){var js=document.body.appendChild(document.createElement("script"));js.onerror=function(){alert("Sorry, the script could not be loaded.")};js.src="https://cdn.jsdelivr.net/gh/dirkdesmet/bookmarklets@master/open-link-in-archive.js"})();
+```
+
