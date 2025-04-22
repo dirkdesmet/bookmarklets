@@ -1,4 +1,4 @@
-(function () {
+(() => {
   const currentUrl = document.location.href;
   const uselessParams = ['journeybuilder','utm_source'];
   const url = new URL(currentUrl);
@@ -9,4 +9,4 @@
   url.host = desktopDomain;
   url.search = filteredParams.toString();
   document.location.href=`https://archive.is/${url.toString()}`;
-});
+})();
